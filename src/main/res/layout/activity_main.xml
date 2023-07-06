@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0:00:00"
+        android:textSize="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"/>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="72dp"
+        android:onClick="onStop"
+        android:src="@drawable/baseline_stop_24"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="72dp"
+        android:onClick="onStart"
+        android:src="@drawable/baseline_play_arrow_24"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="72dp"
+        android:onClick="onReset"
+        android:src="@drawable/baseline_replay_24"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+</RelativeLayout>
